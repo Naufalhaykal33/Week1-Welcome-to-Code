@@ -8,11 +8,14 @@
 
 //bikin fungsinya disini
 
+function shoutOut() {
+    return 'halo parameter'
+}
+
 console.log(shoutOut());
 
-
 // ------------------------------------
-console.log('')
+console.log('halo parameter')
 // ------------------------------------
 ```
 
@@ -25,6 +28,10 @@ console.log('')
 
 let num1 = 1
 let num2 = 2
+
+function calculateMultiply(num1, num2) {
+    return num1 * num2
+}
 
 let hasilPerkalian = calculateMultiply(num1,num2);
 console.log(hasilPerkalian);
@@ -40,14 +47,20 @@ console.log('')
 // "Nama saya [Name], umur saya [Age] tahun, alamat saya di [Address], dan saya punya hobby yaitu [hobby]!"
 
 //bikin fungsinya disini
-
-let name = "Agus";
+let nama = "Agus";
 let age = 30;
 let address = "Jln. Malioboro, Yogjakarta";
 let hobby = "gaming";
 
-let fullSentence = processSentence(name,age,address,hobby);
-console.log(fullSentence); // Menampilkan "Nama saya Agus, umur saya 30 tahun, alamat saya di Jln. Malioboro, Yogjakarta, dan saya punya hobby yaitu gaming!"
+function processSentence(nama,age,address,hobby) {
+    return `Nama saya ${nama}, umur saya ${age},
+    alamat saya di ${address}, dan saya punya hobi yaitu ${hobby}` 
+}
+
+let fullSentence = processSentence(nama,age,address,hobby);
+console.log(fullSentence); 
+// Menampilkan "Nama saya Agus, umur saya 30 tahun, 
+// alamat saya di Jln. Malioboro, Yogjakarta, dan saya punya hobby yaitu gaming!"
 ```
 ---
 Materi Function: [Link](../../study-materials/part6.md)
