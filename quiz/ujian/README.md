@@ -12,8 +12,15 @@
 // Jika kedua angka bernilai sama, function akan me-return -1.
 
 function bandingkanAngka(angka1, angka2) {
-  //code disini
-}
+    if (angka1 < angka2) {
+       return true;
+    }else if (angka1 > angka2) {
+        return false
+    }else if (angka1 = angka2) {
+        return -1
+    }
+    return (angka1, angka2);
+  }
   
   // TEST CASES
   console.log(bandingkanAngka(5, 8)); // true
@@ -50,7 +57,15 @@ console.log(balikKata('Super')); // repuS
 // Contoh, jika menit adalah 63, maka function akan me-return "1:03".
 
 function konversiMenit(menit) {
-    // you can only write your code here!
+  if (menit && 60) {
+    let jam = Math.floor(menit / 60);
+    let sisa = menit % 60;
+
+    if (sisa < 10) {
+      sisa = "0" + sisa;
+    }
+    return `${jam}:${sisa}`;
+  }
 }
   
 // TEST CASES
